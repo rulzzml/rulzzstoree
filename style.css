@@ -306,13 +306,16 @@ a.active, a:hover{
     margin-top: 1rem;
     margin-left: 1rem;
 }
-.knt a:hover,
-.knt i:hover{
+.knt a:hover{
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 12px;
     margin-left: 2rem;
+    transition: all 0.5s;
+}
+.knt i:hover{
+    color: #fff;
     transition: all 0.5s;
 }
 
@@ -326,7 +329,7 @@ footer {
   }
   
   footer .socials {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   
   footer .socials a {
@@ -336,11 +339,17 @@ footer {
     font-size: 1.8rem;
   }
   
-  footer .socials a:hover,
+  footer .socials a:hover{
+  color: var(--putih);
+  padding: 0.4rem;
+  border-radius: 16px;
+  transition: all 0.5s;
+  }
   footer .links a:hover {
     color: var(--putih);
     background-color: var(--abu);
     border-radius: 26px;
+    transition: all 0.5s;
   }
   
   footer .links {
@@ -350,7 +359,7 @@ footer {
   
   footer .links a {
     color: var(--abu);
-    padding: 0.7rem 1rem;
+    padding: 0.2rem 0.8rem;
   }
   
   footer .credit {
@@ -364,4 +373,13 @@ footer {
   footer .credit a {
     color: var(--abu);
     font-weight: 700;
+  }
+  footer .credit a:hover{
+    color: var(--putih);
+    background-color: var(--abu);
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: underline;
+    border-radius: 26px;
+    transition: all 0.5s;
   }
