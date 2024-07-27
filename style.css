@@ -1,0 +1,367 @@
+:root{
+    --biru: #00eeff;
+    --putih: #fff;
+    --abu: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #333;
+}
+.container{
+    text-align: center;
+    margin-top: 1rem;
+}
+.wrapper h1 a{
+    color: #00eeff;
+    font-size: 35px;
+}
+.wrapper h1 a:hover{
+    color: blue;
+}
+.btnn{
+    float: left;
+    font-size: 40px;
+    color: #00eeff;
+    margin-top: -5.5rem;
+    margin-left: 40px;
+    cursor: pointer;
+}
+nav{
+    background-color: #00eeff;
+    width: 100%;
+    height: 250px;
+    margin-top: 2rem;
+}
+nav img{
+    width: 150px;
+    height: 130px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+nav .logorul:hover{
+    background: transparent;
+}
+nav ul{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    margin-top: 1rem;
+}
+nav ul li a{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 17px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+.btn{
+    float: right;
+    font-size: 40px;
+    color: var(--biru);
+    margin-top: -5.5rem;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 980px){
+    nav .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .testi img{
+        float: right;
+        width: 50%;
+        height: 20%;
+        margin-right: 15rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 858px){
+    .btn, .btnn{
+        display: block;
+    }
+    ul{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        margin: 50px 0;
+        line-height: 30px;
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    nav img{
+        width: 200px;
+        height: 200px;
+        margin-top: 23px;
+        border-radius: 50px;
+    }
+    .profil p{
+        text-align: center;
+        color: #fff;
+        width: 50%;
+        margin-left: 5%;
+    }
+    .testi img{
+        float: right;
+        margin-right: 7rem;
+        margin-top: 2rem;
+    }
+    .button{
+        float: right;
+        padding: 20px 20px;
+        border-radius: 26px;
+        background-color: #00eeff;
+        margin-right: 12rem;
+    }
+    .pt p{
+    margin-left: 1rem;
+    font-weight: 600;
+    }
+}
+@media screen and (max-width: 750px){
+    .testi img{
+        float: right;
+        width: 50%;
+        height: 20%;
+        margin-right: 9rem;
+        margin-top: 2rem;
+        margin-top: 0.5rem;
+    }
+    .button{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+        border-radius: 26px;
+        background-color: #00eeff;
+        margin-left: 12rem;
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .testi img{
+        float: right;
+        width: 50%;
+        height: 20%;
+        margin-right: 8rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 385px){
+    .testi img{
+        float: right;
+        width: 100px;
+        height: 50px;
+        margin-right: 5rem;
+        margin-top: 2rem;
+    }
+    .gambar p{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 970px){
+    .ptr{
+        display: flex;
+    }
+}
+/* Home - Profil */
+.profil h1{
+    text-align: center;
+    color: #00eeff;
+    font-size: 45px;
+    margin-top: 5rem;
+}
+.profil p{
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+}
+.testi{
+    text-align: center;
+}
+.testi img{
+    width: 50%;
+    height: 20%;
+    margin-top: 2rem;
+}
+.button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 26px;
+    background-color: #00eeff;
+    margin-top: 0.5rem;
+}
+.button:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+.button a{
+    font-size: 15px;
+    font-weight: 600;
+}
+.button a:hover{
+    background-color: transparent;
+    color: #00eeff;
+}
+
+/* Home - Partner */
+.partner{
+    text-align: center;
+}
+.pt img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.pt a:hover{
+    background: transparent;
+    background-color: transparent;
+}
+.pt p{
+    margin-left: 3rem;
+    font-weight: 600;
+}
+.klik{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Home - Rekber MC */
+.rekber{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.mc p{
+    font-size: 17px;
+}
+
+/* Home - Kontak */
+.kontak{
+    text-align: center;
+}
+.knt{
+    display: inline-flex;
+}
+.knt i{
+    font-size: 30px;
+    color: black;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+.knt a{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: #00eeff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.knt a:hover,
+.knt i:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    margin-left: 2rem;
+    transition: all 0.5s;
+}
+
+/* Home - Footer */
+/* Footer */
+footer {
+    background-color: var(--biru);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+  }
+  
+  footer .socials {
+    padding: 1rem 0;
+  }
+  
+  footer .socials a {
+    color: var(--abu);
+    margin: 1rem;
+    /* font-size: 1.7rem; */
+    font-size: 1.8rem;
+  }
+  
+  footer .socials a:hover,
+  footer .links a:hover {
+    color: var(--putih);
+    background-color: var(--abu);
+    border-radius: 26px;
+  }
+  
+  footer .links {
+    margin-bottom: 1.4rem;
+    font-size: 1.5rem;
+  }
+  
+  footer .links a {
+    color: var(--abu);
+    padding: 0.7rem 1rem;
+  }
+  
+  footer .credit {
+    font-size: 0.8rem;
+  }
+  
+  footer .credit p{
+    font-size: 1.7rem;
+  }
+  
+  footer .credit a {
+    color: var(--abu);
+    font-weight: 700;
+  }
